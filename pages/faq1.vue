@@ -38,7 +38,7 @@
         <input type="radio" name="acc" id="acc3">
         <label for="acc3">
             <h2>03</h2> 
-            <h3>Lorem ipsum dolor</h3> 
+            <h3>Hello world!</h3> 
         </label> 
         <div class="content">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
