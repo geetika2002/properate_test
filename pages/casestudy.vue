@@ -6,10 +6,10 @@
           <p class="px-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed interdum magna in</p>
         </div>
         <div class="w-2/3 grid grid-cols-2 grid-rows-2 gap-2">
-          <img src="random3.png" alt="Image 1" class="w-full h-48 pt-12 object-cover row-span-2" />
-          <img src="random3.png" alt="Image 2" class="w-full h-24 object-cover" />
-          <img src="random3.png" alt="Image 3" class="w-full h-24 object-cover" />
-          <img src="random3.png" alt="Image 4" class="w-full h-24 object-cover col-span-2" />
+          <img src="/random2.png" alt="Image 1" class="w-full h-48 pt-12 object-cover row-span-2" />
+          <img src="/random2.png" alt="Image 2" class="w-full h-24 object-cover" />
+          <img src="/random2.png" alt="Image 3" class="w-full h-24 object-cover" />
+          <img src="/random2.png" alt="Image 4" class="w-full h-24 object-cover col-span-2" />
         </div>
       </div>
     </div>
@@ -63,7 +63,7 @@
       </div>
     </div>
     <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-      <img class="object-cover object-center rounded" alt="hero" src="random1.jpg">
+      <img class="object-cover object-center rounded" alt="hero" src="/random1.jpg">
     </div>
   </div>
    

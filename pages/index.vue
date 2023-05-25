@@ -19,7 +19,7 @@
       </div>
 
       <div class="header__image">
-        <img src="header-1.png" usemap="#workmap" alt="header" />
+        <img src="/header-1.png" usemap="#workmap" alt="header" />
 
         <map name="workmap" id="workmap">
           <area shape="rect" coords="150,10,210,100" alt="area1" href="#" @click="openLayer('area1', $event)">
@@ -30,50 +30,53 @@
       </div>
     </div>
     <div id="area1">
-      <img src="solar_panel.png" />
+      <img src="/solar_panel.png" />
     </div>
     <div id="area2">
-      <img src="solar_panel.png" />
+      <img src="/solar_panel.png" />
+      <p>this is area2</p>
     </div>
     <div id="area3">
-      <img src="solar_panel.png" />
+      <img src="/solar_panel.png" />
+      <p>this is area3</p>
     </div>
    
   
    
   </header>
 
-  <section class="gallary">
+  <section class="gallary" @scroll="handleScroll">
     <div class="section__container gallary__container">
       <h2 class="section__title">
             <b>Process</b>
           </h2>
 
       <div class="gallary__content">
-        <div>
+        
           
           <p class="section__subtitle">
-          <div class="process_step" ref="process_step" @scroll="handleScroll">
+          <div class="process_step" ref="process_step" >
             <div id="step1" class="step" :class="{ expanded: currentStepIndex >= 0 }">
-              <h2>Step 1</h2>
+              <h2><br>Step 1</h2>
               <div class="gallary__col">
-                  <img src="gallery-1.jpg" alt="gallary" />
+                  <img src="/trip-1.jpg" alt="gallary" />
                 </div>
               <p>Evaluate your home</p>
             </div>
             <div id="step2" class="step" :class="{ expanded: currentStepIndex >= 1 }">
-              <h2>Step 2</h2>
+              <h2><br><br><br>Step 2</h2>
               <div class="gallary__col">
-                <img src="gallery-2.jpg" alt="gallary" />
+                <img src="/trip-2.jpg" alt="gallary" />
 
               </div>
               <p>Browse the available upgrades</p>
             </div>
-            <div id="step3" class="step" :class="{ expanded: currentStepIndex >= 1 }">
+            <div id="step3" class="step" :class="{ expanded: currentStepIndex >= 2 }">
+             <br><br> <br><br>  <br><br>  <br><br>  <br><br>  <br><br>  <br><br>  <br><br>
               <h2>Step 3</h2>
               <div class="gallary__col">
 
-                <img src="gallery-3.jpg" alt="gallary" />
+                <img src="/trip-3.jpg" alt="gallary" />
               </div>
               <p>Start your journey</p>
             </div>
@@ -84,7 +87,7 @@
           </p>
         </div>
       </div>
-    </div>
+  
   </section>
 
 
@@ -103,28 +106,28 @@
     </div>
     <div class="destination__grid">
       <div class="destination__card">
-        <img src="destination-1.jpg" alt="destination" />
+        <img src="/destination-1.jpg" alt="destination" />
         <div class="destination__details">
           <p class="destination__title">One year in the RDOS.</p>
           <p class="destination__subtitle">How Properate built the journey</p>
         </div>
       </div>
       <div class="destination__card">
-        <img src="destination-2.jpg" alt="destination" />
+        <img src="/destination-2.jpg" alt="destination" />
         <div class="destination__details">
           <p class="destination__title">One year in the RDOS.</p>
           <p class="destination__subtitle">How Properate built the journey </p>
         </div>
       </div>
       <div class="destination__card">
-        <img src="destination-3.jpg" alt="destination" />
+        <img src="/destination-3.jpg" alt="destination" />
         <div class="destination__details">
           <p class="destination__title">One year in the RDOS.</p>
           <p class="destination__subtitle">How Properate built the journey </p>
         </div>
       </div>
       <div class="destination__card">
-        <img src="destination-4.jpg" alt="destination" />
+        <img src="/destination-4.jpg" alt="destination" />
         <div class="destination__details">
           <p class="destination__title">One year in the RDOS.</p>
           <p class="destination__subtitle">How Properate built the journey </p>
@@ -142,7 +145,7 @@
 
   <div class="trip__grid">
     <div class="trip__card">
-      <img src="trip-1.jpg" alt="trip" />
+      <img src="/trip-1.jpg" alt="trip" />
       <div class="trip__details">
         <p>Fix things now or wait until they stop working. Have a plan that you can come back to any time.
 
@@ -150,7 +153,7 @@
       </div>
     </div>
     <div class="trip__card">
-      <img src="trip-2.jpg" alt="trip" />
+      <img src="/trip-2.jpg" alt="trip" />
       <div class="trip__details">
         <p>Fix things now or wait until they stop working. Have a plan that you can come back to any time.
 
@@ -158,7 +161,7 @@
       </div>
     </div>
     <div class="trip__card">
-      <img src="trip-3.jpg" alt="trip" />
+      <img src="/trip-3.jpg" alt="trip" />
       <div class="trip__details">
         <p>Fix things now or wait until they stop working. Have a plan that you can come back to any time.
 
@@ -350,6 +353,7 @@ nav {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
+  background-color: linear-gradient(135deg, #358280, #5E988D, #87AE9B);
 }
 
 .header__image {

@@ -28,7 +28,7 @@
       </div>
 
       <div class="header__image">
-        <img src="header-1.png" usemap="#workmap" alt="header" />
+        <img src="/header-1.png" usemap="#workmap" alt="header" />
 
         <map name="workmap" id="workmap">
           <area shape="rect" coords="12,5,32,25" alt="area1" href="#" @click="openLayer('area1')">
@@ -50,11 +50,11 @@
     <div class="section__container gallary__container">
       <div class="image__gallary">
         <div class="gallary__col">
-          <img src="gallery-1.jpg" alt="gallary" />
+          <img src="/gallery-1.jpg" alt="gallary" />
         </div>
         <div class="gallary__col">
-          <img src="gallery-2.jpg" alt="gallary" />
-          <img src="gallery-3.jpg" alt="gallary" />
+          <img src="/gallery-2.jpg" alt="gallary" />
+          <img src="/gallery-3.jpg" alt="gallary" />
         </div>
       </div>
 
@@ -103,28 +103,28 @@
     </div>
     <div class="destination__grid">
       <div class="destination__card">
-        <img src="destination-1.jpg" alt="destination" />
+        <img src="/destination-1.jpg" alt="destination" />
         <div class="destination__details">
           <p class="destination__title">One year in the RDOS.</p>
           <p class="destination__subtitle">How Properate built the journey</p>
         </div>
       </div>
       <div class="destination__card">
-        <img src="destination-2.jpg" alt="destination" />
+        <img src="/destination-2.jpg" alt="destination" />
         <div class="destination__details">
           <p class="destination__title">One year in the RDOS.</p>
           <p class="destination__subtitle">How Properate built the journey </p>
         </div>
       </div>
       <div class="destination__card">
-        <img src="destination-3.jpg" alt="destination" />
+        <img src="/destination-3.jpg" alt="destination" />
         <div class="destination__details">
           <p class="destination__title">One year in the RDOS.</p>
           <p class="destination__subtitle">How Properate built the journey </p>
         </div>
       </div>
       <div class="destination__card">
-        <img src="destination-4.jpg" alt="destination" />
+        <img src="/destination-4.jpg" alt="destination" />
         <div class="destination__details">
           <p class="destination__title">One year in the RDOS.</p>
           <p class="destination__subtitle">How Properate built the journey </p>
@@ -142,7 +142,7 @@
 
   <div class="trip__grid">
     <div class="trip__card">
-      <img src="trip-1.jpg" alt="trip" />
+      <img src="/trip-1.jpg" alt="trip" />
       <div class="trip__details">
         <p>Fix things now or wait until they stop working. Have a plan that you can come back to any time.
 
@@ -150,7 +150,7 @@
       </div>
     </div>
     <div class="trip__card">
-      <img src="trip-2.jpg" alt="trip" />
+      <img src="/trip-2.jpg" alt="trip" />
       <div class="trip__details">
         <p>Fix things now or wait until they stop working. Have a plan that you can come back to any time.
 
@@ -158,7 +158,7 @@
       </div>
     </div>
     <div class="trip__card">
-      <img src="trip-3.jpg" alt="trip" />
+      <img src="/trip-3.jpg" alt="trip" />
       <div class="trip__details">
         <p>Fix things now or wait until they stop working. Have a plan that you can come back to any time.
 

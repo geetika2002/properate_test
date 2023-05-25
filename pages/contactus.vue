@@ -1,4 +1,5 @@
 <template>
+<br><br>
     <div class="container mx-auto px-4">
       <h1 class="mt-8 mb-4 text-3xl font-bold text-center">Drop Us A Line</h1>
       <ul class="flex flex-wrap justify-center mb-8">
@@ -44,7 +45,7 @@
         </div>
         <div class="w-full md:w-1/2 mt-8 md:mt-0">
           <div class="max-w-full">
-            <img src="random2.png" alt="Image description" class="w-full h-auto">
+            <img src="/random2.png" alt="Image description" class="w-full h-auto">
           </div>
         </div>
       </div>

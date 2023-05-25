@@ -1,16 +1,16 @@
 <template>
    
-    <div class="container mt-20 my-0 xs:px-0 mx-auto bg-gray-100">
+    <div class="container mt-20 my-0 xs:px-0 mx-auto bg-slate-100">
       <!-- Section:about us  -->
       <section class="mb-10 text-gray-800 text-center">
         <div class="flex justify-center">
-          <div class="max-w-[800px]">
+          <div class="max-w-[800px] ">
             <h2
-              class="mt-10 text-5xl md:text-6xl xl:text-5xl font-bold tracking-tight mb-6"
+              class="mt-10 text-5xl md:text-6xl xl:text-5xl font-bold tracking-tight mb-6 text-teal-950 "
             >
               About us <br />
             </h2>
-            <p class="text-gray-500 text-lg">
+            <p class="text-teal-700 text-lg">
               Occaecat est ipsum reprehenderit reprehederit veniam anim laborum
               est esse duis occaecat reprehenderit pariatur.
             </p>
@@ -21,7 +21,7 @@
   
       <section class="md:ml-20 md:mr-20 md:mb-16 text-gray-800 text-center">
         <img
-          src="http://placeimg.com/1370/1200/nature"
+          src="header-1.png"
           class="mb-10 lg:h-[582px] lg:w-[1370px] max-w-full"
           alt="..."
         />
@@ -42,8 +42,8 @@
                 </svg>
               </div>
               <div class="grow ml-4">
-                <p class="font-bold text-2xl mb-1">VISION</p>
-                <p class="text-gray-500">
+                <p class="font-bold text-2xl mb-1 text-teal-900">VISION</p>
+                <p class="text-teal-700">
                   Ex nisi in in minim dolore ad nostrud cillum. Fugiat veniam
                   adipisicing nulla amet cupidatat sunt dolore nisi ulla amet
                   cupidatat sunt dolore nisi ullamco exercitation
@@ -65,8 +65,8 @@
                 </svg>
               </div>
               <div class="grow ml-4">
-                <p class="font-bold text-2xl mb-1">MISSION</p>
-                <p class="text-gray-500">
+                <p class="font-bold text-2xl mb-1 text-teal-900">MISSION</p>
+                <p class="text-teal-700">
                   Ex nisi in in minim dolore ad nostrud cillum. Fugiat veniam
                   adipisicing nulla amet cupidatat sunt dolore nisi ulla amet
                   cupidatat sunt dolore nisi ullamco exercitation
@@ -80,8 +80,8 @@
        
       <!-- Section: team -->
       <section class="md:ml-20 md:mr-20 mb-2 md:mb-16 text-gray-800 text-center">
-        <h2 class="text-5xl font-bold mb-6">Our team</h2>
-        <p class="text-gray-500 text-lg mb-16">
+        <h2 class="text-5xl font-bold mb-6 text-teal-900">Our team</h2>
+        <p class="text-gray-500 text-lg mb-16 text-teal-700">
           Occaecat est ipsum reprehenderit reprehederit veniam anim laborum est
           esse duis occaecat reprehenderit pariatur.
         </p>
@@ -90,7 +90,7 @@
             <div class="bg-white block rounded-lg shadow-lg">
               <div class="relative overflow-hidden bg-no-repeat bg-cover">
                 <img
-                  src="https://mdbootstrap.com/img/new/avatars/18.jpg"
+                  src="person.png"
                   class="w-full rounded-t-lg"
                 />
                 <a href="#!">
@@ -111,8 +111,8 @@
                 </svg>
               </div>
               <div class="p-6">
-                <h5 class="text-lg font-bold mb-4">Geetika</h5>
-                <p class="text-gray-500 mb-4">Frontend Developer</p>
+                <h5 class="text-lg font-bold mb-4 text-teal-900">Arman</h5>
+                <p class="text-gray-500 mb-4 text-teal-700">CEO</p>
                 <ul class="list-inside flex mx-auto justify-center">
                   <a href="#!" class="px-2">
                     <svg
@@ -158,7 +158,7 @@
             <div class="bg-white block rounded-lg shadow-lg">
               <div class="relative overflow-hidden bg-no-repeat bg-cover">
                 <img
-                  src="https://mdbootstrap.com/img/new/avatars/12.jpg"
+                  src="person.png"
                   class="w-full rounded-t-lg"
                 />
                 <a href="#!">
@@ -179,8 +179,8 @@
                 </svg>
               </div>
               <div class="p-6">
-                <h5 class="text-lg font-bold mb-4">Vivian</h5>
-                <p class="text-gray-500 mb-4">Frontend Developer</p>
+                <h5 class="text-lg font-bold mb-4 text-teal-900">Alex</h5>
+                <p class="text-gray-500 mb-4 text-teal-700">Technical Lead</p>
                 <ul class="list-inside flex mx-auto justify-center">
                   <a href="#!" class="px-2">
                     <svg
@@ -226,7 +226,7 @@
             <div class="bg-white block rounded-lg shadow-lg">
               <div class="relative overflow-hidden bg-no-repeat bg-cover">
                 <img
-                  src="https://mdbootstrap.com/img/new/avatars/9.jpg"
+                  src="person.png"
                   class="w-full rounded-t-lg"
                 />
                 <a href="#!">
@@ -247,8 +247,8 @@
                 </svg>
               </div>
               <div class="p-6">
-                <h5 class="text-lg font-bold mb-4">Dongil Kwon</h5>
-                <p class="text-gray-500 mb-4">Marketing expert</p>
+                <h5 class="text-lg font-bold mb-4 text-teal-900">Noura</h5>
+                <p class="text-gray-500 mb-4 text-teal-700">Business Manager</p>
                 <ul class="list-inside flex mx-auto justify-center">
                   <a href="#!" class="px-2">
                     <svg
@@ -295,7 +295,7 @@
             <div class="bg-white block rounded-lg shadow-lg">
               <div class="relative overflow-hidden bg-no-repeat bg-cover">
                 <img
-                  src="https://mdbootstrap.com/img/new/avatars/15.jpg"
+                  src="person.png"
                   class="w-full rounded-t-lg"
                 />
                 <a href="#!">
@@ -316,8 +316,8 @@
                 </svg>
               </div>
               <div class="p-6">
-                <h5 class="text-lg font-bold mb-4">Ellie kim</h5>
-                <p class="text-gray-500 mb-4">Web designer</p>
+                <h5 class="text-lg font-bold mb-4 text-teal-900">Artur</h5>
+                <p class="text-gray-500 mb-4 text-teal-700">Product Manager</p>
                 <ul class="list-inside flex mx-auto justify-center">
                   <a href="#!" class="px-2">
                     <svg
@@ -364,13 +364,13 @@
   
       <!-- Section: join our team-->
   
-      <section class="md:ml-20 md:mr-20 text-gray-800 shadow-lg">
+      <section class="md:ml-20 md:mr-20 text-teal-900 shadow-lg bg-gradient-to-br from-teal-600 via-teal-400 to-teal-200">
         <div class="px-1 py-6 md:px-12">
           <div class="grid lg:grid-cols-2 lg:gap-x-12 items-center">
             <div class="mb-12 lg:mb-0">
               <h2 class="my-12 text-5xl font-bold tracking-tight leading-tight">
                 Join our team <br />
-                <p class="text-gray-500 text-lg mb-16">
+                <p class="text-teal-700 text-lg mb-16">
                   Occaecat est ipsum reprehenderit reprehederit veniam anim laborum est
                   esse duis occaecat reprehenderit pariatur.
                 </p>
@@ -388,7 +388,7 @@
   
             <div class="mb-12 lg:mb-0">
               <img
-                src="http://placeimg.com/660/400/nature"
+                src="team_photo.jpg"
                 class="w-full rounded-lg sshadow-lg"
                 alt=""
               />

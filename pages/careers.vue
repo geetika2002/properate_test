@@ -15,7 +15,7 @@
         <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
             <div class="p-4 md:w-1/3 sm:mb-0 mb-6 border-2 border-gray-200 border-opacity-60">
                 <div class="rounded-lg h-64 overflow-hidden">
-                    <img alt="content" class="object-cover object-center h-full w-full" src="random2.png">
+                    <img alt="content" class="object-cover object-center h-full w-full" src="/random2.png">
                 </div>
                 <h2 class="text-xl font-medium title-font text-gray-900 mt-5">Shooting Stars</h2>
                 <p class="text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr
@@ -23,7 +23,7 @@
             </div>
             <div class="p-4 md:w-1/3 sm:mb-0 mb-6 border-2 border-gray-200 border-opacity-60">
                 <div class="rounded-lg h-64 overflow-hidden">
-                    <img alt="content" class="object-cover object-center h-full w-full" src="random2.png">
+                    <img alt="content" class="object-cover object-center h-full w-full" src="/random2.png">
                 </div>
                 <h2 class="text-xl font-medium title-font text-gray-900 mt-5">The Catalyzer</h2>
                 <p class="text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr
@@ -31,7 +31,7 @@
             </div>
             <div class="p-4 md:w-1/3 sm:mb-0 mb-6 border-2 border-gray-200 border-opacity-60">
                 <div class="rounded-lg h-64 overflow-hidden">
-                    <img alt="content" class="object-cover object-center h-full w-full" src="random2.png">
+                    <img alt="content" class="object-cover object-center h-full w-full" src="/random2.png">
                 </div>
                 <h2 class="text-xl font-medium title-font text-gray-900 mt-5">The 400 Blows</h2>
                 <p class="text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr

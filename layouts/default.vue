@@ -1,7 +1,7 @@
 <template>
   
   <nav>
-    <div class="nav__logo"><NuxtLink to="/"><img src="logo.png" /></NuxtLink></div>
+    <div class="nav__logo"><NuxtLink to="/"><img src="/logo.png" /></NuxtLink></div>
     <ul class="nav__links">
       <li class="link">
         <NuxtLink to="/"><b>Technology</b></NuxtLink>
