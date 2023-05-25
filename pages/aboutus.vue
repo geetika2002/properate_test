@@ -364,19 +364,19 @@
   
       <!-- Section: join our team-->
   
-      <section class="md:ml-20 md:mr-20 text-teal-900 shadow-lg bg-gradient-to-br from-teal-600 via-teal-400 to-teal-200">
+      <section class="md:ml-20 md:mr-20 text-teal-1000 shadow-lg bg-gradient-to-br from-teal-600 via-teal-400 to-teal-200">
         <div class="px-1 py-6 md:px-12">
           <div class="grid lg:grid-cols-2 lg:gap-x-12 items-center">
             <div class="mb-12 lg:mb-0">
               <h2 class="my-12 text-5xl font-bold tracking-tight leading-tight">
                 Join our team <br />
-                <p class="text-teal-700 text-lg mb-16">
+                <p class="text-teal-900 text-lg mb-16">
                   Occaecat est ipsum reprehenderit reprehederit veniam anim laborum est
                   esse duis occaecat reprehenderit pariatur.
                 </p>
               </h2>
               <a
-                class="inline-block px-7 py-3 bg-green-600 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-green-700 hover:shadow-lg focus:bg-green-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-800 active:shadow-lg transition duration-150 ease-in-out mb-2 md:mr-2 justify-self-start"
+                class="inline-block px-7 py-3 bg-zinc-100 text-teal-600 font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-teal-50 hover:shadow-lg focus:bg-teal-50 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-teal-50 active:shadow-lg transition duration-150 ease-in-out mb-2 md:mr-2 justify-self-start"
                 href="#!"
                 role="button"
                 data-mdb-ripple="true"
@@ -399,6 +399,7 @@
     
     </div>
  
+ <br><br>
   </template>
   
   <script setup>

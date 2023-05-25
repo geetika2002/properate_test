@@ -1,4 +1,5 @@
 <template>
+<br><br><br><br>
     <div class="flex flex-col items-center justify-center">
         <div class="max-w-md mx-auto text-center">
             <h1 class="text-4xl font-bold">Join our team</h1>
@@ -202,7 +203,10 @@
         </div>
         <button class="py-2 px-4 mt-4 bg-gray-300 hover:bg-gray-600 text-white font-semibold">Apply Now</button>
     </div>
-</div></template>
+</div>
+
+<br><br>
+</template>
 
 <style scoped>@import 'tailwindcss/base';
 @import 'tailwindcss/components';
