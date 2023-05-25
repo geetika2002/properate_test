@@ -21,7 +21,7 @@
   
       <section class="md:ml-20 md:mr-20 md:mb-16 text-gray-800 text-center">
         <img
-          src="header-1.png"
+          src="/header-1.png"
           class="mb-10 lg:h-[582px] lg:w-[1370px] max-w-full"
           alt="..."
         />
@@ -90,7 +90,7 @@
             <div class="bg-white block rounded-lg shadow-lg">
               <div class="relative overflow-hidden bg-no-repeat bg-cover">
                 <img
-                  src="person.png"
+                  src="/person.png"
                   class="w-full rounded-t-lg"
                 />
                 <a href="#!">
@@ -158,7 +158,7 @@
             <div class="bg-white block rounded-lg shadow-lg">
               <div class="relative overflow-hidden bg-no-repeat bg-cover">
                 <img
-                  src="person.png"
+                  src="/person.png"
                   class="w-full rounded-t-lg"
                 />
                 <a href="#!">
@@ -226,7 +226,7 @@
             <div class="bg-white block rounded-lg shadow-lg">
               <div class="relative overflow-hidden bg-no-repeat bg-cover">
                 <img
-                  src="person.png"
+                  src="/person.png"
                   class="w-full rounded-t-lg"
                 />
                 <a href="#!">
@@ -295,7 +295,7 @@
             <div class="bg-white block rounded-lg shadow-lg">
               <div class="relative overflow-hidden bg-no-repeat bg-cover">
                 <img
-                  src="person.png"
+                  src="/person.png"
                   class="w-full rounded-t-lg"
                 />
                 <a href="#!">
@@ -388,7 +388,7 @@
   
             <div class="mb-12 lg:mb-0">
               <img
-                src="team_photo.jpg"
+                src="/team_photo.jpg"
                 class="w-full rounded-lg sshadow-lg"
                 alt=""
               />

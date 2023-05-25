@@ -29,7 +29,7 @@
   <footer class="footer">
     <div class="section__container footer__container">
       <div class="footer__col">
-        <NuxtLink to="/"><img src="logo.png"> </NuxtLink>
+        <NuxtLink to="/"><img src="/logo.png"> </NuxtLink>
         <p>
         <br>
           Improve your home's efficiency. Use our tools to calculate your potential savings, and recieve a personalized
