@@ -1,10 +1,19 @@
 <template>
-  
+  <nav>
+    <div class="nav__logo">Properate<span>.</span></div>
+    <ul class="nav__links">
+      <li class="link"><NuxtLink to="/"><b>Technology</b></NuxtLink></li>
+      <li class="link"><NuxtLink to="/"><b>Solutions</b></NuxtLink></li>
+      <li class="link"><NuxtLink to="/"><b>Science</b></NuxtLink></li>
+      <li class="link"><NuxtLink to="faq1"><b>About</b></NuxtLink></li>
+    </ul>
+    <button class="btn">Login</button>
+  </nav>
 
   <header>
     <div class="section__container header__container">
-
-
+      
+      
       <div class="header__content">
         <div>
           <h1>85% of all homes need an Energy Retrofit by 2030</h1>
@@ -22,64 +31,55 @@
         <img src="header-1.png" usemap="#workmap" alt="header" />
 
         <map name="workmap" id="workmap">
-          <area shape="rect" coords="150,10,210,100" alt="area1" href="#" @click="openLayer('area1', $event)">
-          <area shape="rect" coords="90,130,190,190" alt="area2" href="#" @click="openLayer('area2', $event)">
-          <area shape="rect" coords="260,50,400,170" alt="area3" href="#" @click="openLayer('area3', $event)">
+          <area shape="rect" coords="12,5,32,25" alt="area1" href="#" @click="openLayer('area1')">
+          <area shape="rect" coords="2,183,22,210" alt="area2" href="#" @click="openLayer('area2')">
+          <area shape="rect" coords="2,280,22,300" alt="area3" href="#" @click="openLayer('area3')">
         </map>
 
       </div>
     </div>
-    <div id="area1">
-      <img src="solar_panel.png" />
-    </div>
-    <div id="area2">
-      <img src="solar_panel.png" />
-    </div>
-    <div id="area3">
-      <img src="solar_panel.png" />
-    </div>
-   
-  
-   
-  </header>
+    <div id="overay" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">test</div>
 
+    <div v-if="showLayer === 'area1' || showLayer === 'area2' || showLayer === 'area3'" class="layer">
+        <!-- Layer content -->
+        <p>{{ showLayer }} layer content</p>
+      </div>
+  </header>
+  
   <section class="gallary">
     <div class="section__container gallary__container">
-      <h2 class="section__title">
-            <b>Process</b>
-          </h2>
+      <div class="image__gallary">
+        <div class="gallary__col">
+          <img src="gallery-1.jpg" alt="gallary" />
+        </div>
+        <div class="gallary__col">
+          <img src="gallery-2.jpg" alt="gallary" />
+          <img src="gallery-3.jpg" alt="gallary" />
+        </div>
+      </div>
 
       <div class="gallary__content">
         <div>
-          
+          <h2 class="section__title">
+            <b>Process</b>
+          </h2>
           <p class="section__subtitle">
-          <div class="process_step" ref="process_step" @scroll="handleScroll">
-            <div id="step1" class="step" :class="{ expanded: currentStepIndex >= 0 }">
-              <h2>Step 1</h2>
-              <div class="gallary__col">
-                  <img src="gallery-1.jpg" alt="gallary" />
-                </div>
-              <p>Evaluate your home</p>
-            </div>
-            <div id="step2" class="step" :class="{ expanded: currentStepIndex >= 1 }">
-              <h2>Step 2</h2>
-              <div class="gallary__col">
-                <img src="gallery-2.jpg" alt="gallary" />
-
+            <div class="process_step" ref="process_step" @scroll="handleScroll">
+              <div id="step1" class="step" :class="{ expanded: currentStepIndex >= 0 }">
+                <h2>Step 1</h2>
+                <p>Evaluate your home</p>
               </div>
-              <p>Browse the available upgrades</p>
-            </div>
-            <div id="step3" class="step" :class="{ expanded: currentStepIndex >= 1 }">
-              <h2>Step 3</h2>
-              <div class="gallary__col">
-
-                <img src="gallery-3.jpg" alt="gallary" />
+              <div id="step2" class="step" :class="{ expanded: currentStepIndex >= 1 }">
+                <h2>Step 2</h2>
+                <p>Browse the available upgrades</p>
               </div>
-              <p>Start your journey</p>
+              <div id="step3" class="step" :class="{ expanded: currentStepIndex >= 1 }">
+                <h2>Step 3</h2>
+                <p>Start your journey</p>
+              </div>
             </div>
-          </div>
-          <br><br>Fix things now or wait until they stop working.
-          Have a plan that you can come back to any time.
+            <br><br>Fix things now or wait until they stop working.
+            Have a plan that you can come back to any time.
 
           </p>
         </div>
@@ -186,16 +186,44 @@
       </div>
     </div>
   </section>
+
+  <footer class="footer">
+    <div class="section__container footer__container">
+      <div class="footer__col">
+        <h3>Properate<span>.</span></h3>
+        <p>
+          Improve your home's efficiency. Use our tools to calculate your potential savings, and recieve a personalized
+          report within in minutes
+          of completing our questionaire.
+        </p>
+      </div>
+      <div class="footer__col">
+        <h4>Support</h4>
+        <p>FAQs</p>
+        <p>Home</p>
+        <p>Professionals</p>
+        <p>About Us</p>
+        <p>Careers</p>
+        <p>Pricing</p>
+      </div>
+      <div class="footer__col">
+        <h4>Address</h4>
+        <p>
+          <span>Address:</span> 401-68 Water St. Vancouver BC, Canada V6B 1A4
+        </p>
+        <p><span>Email:</span> arman@properate.io </p>
+        <p><span>Phone:</span> +1 604-396-5355</p>
+      </div>
+    </div>
+    <div class="footer__bar">
+      Copyright © 2023 BCIT team, All rights reserved.
+    </div>
+  </footer>
 </template>
 
 
 <style>
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-
-p,
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Roboto', sans-serif;
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap");
 
 :root {
   --primary-color: #3685fb;
@@ -250,22 +278,20 @@ h1, h2, h3, h4, h5, h6 {
 
 .section__title {
   font-size: 3rem;
-  font-weight: 600;
+  font-weight: 600; 
   margin-bottom: 1rem;
   color: transparent;
-  background-image: linear-gradient(to right, #8B0000, #0C6C72, #E5D3B4, #D6B18D, #BED2BC);
+  background-image: linear-gradient(to right ,#8B0000, #0C6C72, #E5D3B4, #D6B18D, #BED2BC);
   -webkit-background-clip: text;
-  background-clip: text;
+  background-clip: text;    
   background-size: 200%;
   background-position: -200%;
   transition: all ease-in-out 2s;
   cursor: pointer;
-
-
 }
 
 .section__title:hover {
-  background-position: 200%;
+   background-position: 200%;
 }
 
 .section__subtitle {
@@ -332,7 +358,7 @@ nav {
   display: flex;
   align-items: center;
   gap: 1rem;
-  font-size: 20px;
+  font-size: 20px; 
 }
 
 .link a {
@@ -345,8 +371,12 @@ nav {
   color: #4CC0BB;
 }
 
+header {
+  background-color: var(--secondary-color);
+}
+
 .header__container {
-  min-height: 80vh;
+  min-height: 100vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
@@ -359,12 +389,14 @@ nav {
 .header__image img {
   position: absolute;
   top: 50%;
-  left: 60%;
+  left: 50%;
+  border: 0.5rem solid var(--extra-light);
+  border-radius: 2rem;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
 }
 
 .header__image img:nth-child(1) {
-  width: 100%;
-  height: 80%;
+  max-width: 350px;
   transform: translate(-75%, -50%);
 }
 
@@ -378,14 +410,12 @@ nav {
   align-items: center;
   justify-content: center;
 }
-
-.layer {
-  display: flex;
+.layer{
+  display:flex;
   align-items: center;
   justify-content: center;
   font-size: 20px;
 }
-
 .header__content>div {
   max-width: 400px;
   display: grid;
@@ -403,48 +433,27 @@ nav {
   line-height: 4rem;
   font-weight: 800;
   background: linear-gradient(to right, rgba(119, 195, 183, 1) 0%, rgba(94, 152, 141, 1) 20%, rgba(0, 0, 0, 1) 61%), linear-gradient(rgb(97, 183, 217) 52%, rgb(224, 246, 255) 60%, rgb(78, 99, 132) 61%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background-clip: text; 
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
   animation: wave 2000ms ease alternate infinite;
   transition: all 0.4s ease;
 }
 
-@keyframes wave {
-  0% {
-    background-position: 0 0;
-  }
-
-  100% {
-    background-position: 50vw 10px;
-  }
-}
+ @keyframes wave {
+        0% {
+          background-position: 0 0;
+        }
+        100% {
+          background-position: 50vw 10px;
+        }
+      }
 
 .header__content .action__btns {
   display: flex;
   align-items: center;
   gap: 2rem;
   margin-top: 1rem;
-}
-
-#area1,
-#area2,
-#area3 {
-  position: absolute;
-  top: 70%;
-  left: 70%;
-  transform: translate(-50%, -50%);
-  display: none;
-  color: white;
-  font-weight: bold;
-}
-
-#area1 img,
-#area2 img,
-#area3 img {
-  width: 100px;
-  height: auto;
-
 }
 
 .story {
@@ -565,7 +574,7 @@ nav {
   text-align: center;
   margin-right: auto;
   margin-left: auto;
-
+ 
 }
 
 .trip__grid {
@@ -597,20 +606,13 @@ nav {
 
 .gallary__container {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
-  width: 100%;
-  height: 100%;
-}
-
-.process_step {
-  width: 100%;
-  height: 100%;
 }
 
 .image__gallary {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
 }
 
@@ -620,6 +622,10 @@ nav {
   gap: 1rem;
 }
 
+.gallary__col img {
+  border-radius: 1rem;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
 
 .gallary__content {
   display: flex;
@@ -629,20 +635,19 @@ nav {
 }
 
 .gallary__content>div {
-  max-width: 800px;
+  max-width: 400px;
 }
 
 .gallary__content .section__subtitle {
   margin-bottom: 2rem;
 }
 
-
 .subscribe {
   background-color: var(--secondary-color);
 }
 
 .subscribe h2 {
-  font-size: 2.5rem;
+  font-size: 2.5rem; 
 }
 
 .subscribe__container {
@@ -677,7 +682,7 @@ nav {
 
 .footer {
   background-color: #d8d8cf;
-
+  
 }
 
 .footer__container {
@@ -687,7 +692,7 @@ nav {
   color: #383838;
 
 
-
+  
 }
 
 .footer__col h3 {
@@ -733,15 +738,12 @@ nav {
 
 .process_step {
   height: 50vh;
-  
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
 }
-
-.process_step::-webkit-scrollbar {
-  display: none;
+.process_step::-webkit-scrollbar{
+  display:none;
 }
-
 .step {
   height: 50vh;
   scroll-snap-align: start;
@@ -819,8 +821,6 @@ nav {
     grid-template-columns: repeat(2, 1fr);
   }
 
-
-
 }
 </style>
 
@@ -833,28 +833,21 @@ export default {
     };
   },
   methods: {
-    openLayer(area, event) {
-      //alert(area)
+    openLayer(area) {
+      alert(area)
       this.showLayer = area;
       var coordinates = {
         area1: { top: 1, left: 3 },
         area2: { top: 183, left: 2 },
         area3: { top: 280, left: 2 }
       };
-      var overlay = document.getElementById(area);
+      var overlay = document.getElementById("overay");
 
-
+      
       overlay.style.display = "block";
-
-      var x = event.clientX;
-      var y = event.clientY;
-    
-      overlay.style.top = y + "px";
-      overlay.style.left = x + "px";
-      //overlay.style.top = coordinates[area].top + "px";
-      //overlay.style.top = coordinates[area].top + "px";
-
-      //overlay.style.left = coordinates[area].left + "px";
+      overlay.style.top = coordinates[area].top + "px";
+      alert(overlay.style.top);
+      overlay.style.left = coordinates[area].left + "px";
     },
     handleScroll() {
       const container = this.$refs.process_step;
