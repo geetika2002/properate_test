@@ -1,6 +1,6 @@
 ---
 title: Unleashing the Power of Nuxt.js Content Module
-img: random3.jpg
+img: /destination-4.jpg
 alt: random pic
 date: 2020-09-20T22:25:24.197Z
 description: "Discover the potential of the @nuxtjs/content module and supercharge your Nuxt.js application. Organize your Markdown, JSON files in a content/ directory and accessing them through a MongoDB-like API."

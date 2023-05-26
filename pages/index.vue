@@ -1,6 +1,4 @@
 <template>
-  
-
   <header>
     <div class="section__container header__container">
 
@@ -22,8 +20,8 @@
         <img src="/header-1.png" usemap="#workmap" alt="header" />
 
         <map name="workmap" id="workmap">
-          <area shape="rect" coords="150,10,210,100" alt="area1" href="#" @click="openLayer('area1', $event)">
-          <area shape="rect" coords="90,130,190,190" alt="area2" href="#" @click="openLayer('area2', $event)">
+          <area shape="rect" coords="150,10,230,100" alt="area1" href="#" @click="openLayer('area1', $event)">
+          <area shape="rect" coords="90,130,190,210" alt="area2" href="#" @click="openLayer('area2', $event)">
           <area shape="rect" coords="260,50,400,170" alt="area3" href="#" @click="openLayer('area3', $event)">
         </map>
 
@@ -40,31 +38,32 @@
       <img src="/solar_panel.png" />
       <p>this is area3</p>
     </div>
-   
-  
-   
+
+
+
   </header>
 
   <section class="gallary" @scroll="handleScroll">
     <div class="section__container gallary__container">
       <h2 class="section__title">
-            <b>Process</b>
-          </h2>
+        <b>Process</b>
+      </h2>
 
       <div class="gallary__content">
-        
-          
-          <p class="section__subtitle">
-          <div class="process_step" ref="process_step" >
+
+
+        <div class="section__subtitle">
+          <div class="process_step" ref="process_step">
             <div id="step1" class="step" :class="{ expanded: currentStepIndex >= 0 }">
-              <h2><br>Step 1</h2>
+              <h2>Step 1</h2>
               <div class="gallary__col">
-                  <img src="/trip-1.jpg" alt="gallary" />
-                </div>
+                <img src="/trip-1.jpg" alt="gallary" />
+              </div>
               <p>Evaluate your home</p>
             </div>
             <div id="step2" class="step" :class="{ expanded: currentStepIndex >= 1 }">
-              <h2><br><br><br>Step 2</h2>
+              <h2>Step 2</h2>
+
               <div class="gallary__col">
                 <img src="/trip-2.jpg" alt="gallary" />
 
@@ -72,7 +71,6 @@
               <p>Browse the available upgrades</p>
             </div>
             <div id="step3" class="step" :class="{ expanded: currentStepIndex >= 2 }">
-             <br><br> <br><br>  <br><br>  <br><br>  <br><br>  <br><br>  <br><br>  <br><br>
               <h2>Step 3</h2>
               <div class="gallary__col">
 
@@ -84,10 +82,10 @@
           <br><br>Fix things now or wait until they stop working.
           Have a plan that you can come back to any time.
 
-          </p>
         </div>
       </div>
-  
+    </div>
+
   </section>
 
 
@@ -196,7 +194,12 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 p,
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Roboto', sans-serif;
 }
 
@@ -607,10 +610,7 @@ nav {
   height: 100%;
 }
 
-.process_step {
-  width: 100%;
-  height: 100%;
-}
+
 
 .image__gallary {
   display: grid;
@@ -633,7 +633,7 @@ nav {
 }
 
 .gallary__content>div {
-  max-width: 800px;
+  max-width: 1200px;
 }
 
 .gallary__content .section__subtitle {
@@ -736,8 +736,8 @@ nav {
 }
 
 .process_step {
-  height: 50vh;
-  
+  height: 60vh;
+
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
 }
@@ -747,7 +747,7 @@ nav {
 }
 
 .step {
-  height: 50vh;
+  height: 60vh;
   scroll-snap-align: start;
   display: flex;
   flex-direction: column;
@@ -757,11 +757,19 @@ nav {
 
 .step h2 {
   font-size: 3rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
 }
 
 .step p {
   font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.step img {
+  width: 1000px;
+  height: 300px;
+
 }
 
 .expanded {
@@ -800,6 +808,7 @@ nav {
   .trip__grid {
     grid-template-columns: repeat(2, 1fr);
   }
+  
 }
 
 @media (width < 600px) {
@@ -813,6 +822,7 @@ nav {
 
   .gallary__container {
     grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 10px;
   }
 
   .subscribe__container {
@@ -821,6 +831,19 @@ nav {
 
   .footer__container {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .process_step {
+    height: 50vh;
+
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+  }
+
+  .step img {
+    width: 100vh;
+    height: 120px;
+
   }
 
 
@@ -852,7 +875,7 @@ export default {
 
       var x = event.clientX;
       var y = event.clientY;
-    
+
       overlay.style.top = y + "px";
       overlay.style.left = x + "px";
       //overlay.style.top = coordinates[area].top + "px";
@@ -870,7 +893,22 @@ export default {
         steps[this.currentStepIndex].classList.add('expanded');
         this.currentStepIndex++;
       }
+    },
+    handleResize() {
+      const areaElements = document.querySelectorAll('#area1, #area2, #area3');
+      const isMobile = window.innerWidth < 1500; // Adjust the breakpoint as per your needs
+
+      areaElements.forEach(areaElement => {
+        areaElement.style.display = isMobile ? 'none' : 'none';
+      });
     }
+  },
+  mounted() {
+    window.addEventListener('resize', this.handleResize);
+  },
+  destroyed() {
+    window.removeEventListener('resize', this.handleResize);
   }
 }
+
 </script>

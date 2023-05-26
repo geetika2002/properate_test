@@ -1,6 +1,6 @@
 <template>
 <br><br>
-    <div class="container mx-auto px-4 bg-teal-50">
+    <div class="container mx-auto px-4">
       <h1 class="mt-8 mb-4 text-3xl font-bold text-center text-teal-900">Drop Us A Line</h1>
       <ul class="flex flex-wrap justify-center mb-8">
   <li class="mt-4 mx-2 text-xl flex items-center text-teal-700">
@@ -41,7 +41,10 @@
             <label for="questions">Questions</label>
             <textarea id="questions" name="questions" placeholder="Enter your questions or comments" class="px-4 py-2 border rounded w-full"></textarea>
           </div>
-          <button type="submit" class="btn">Submit</button>
+          <div class="flex">
+        <a class="inline-block px-7 py-3 bg-zinc-100 text-teal-600 font-bold text-medium leading-snug uppercase rounded shadow-md hover:bg-teal-500 hover:shadow-lg focus:bg-teal-50 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-teal-50 active:shadow-lg transition duration-150 ease-in-out mb-2 md:mr-2 justify-self-start"
+          href="#!" role="button" data-mdb-ripple="true" data-mdb-ripple-color="light">Submit</a>
+      </div>
         </div>
         <div class="w-full md:w-1/2 mt-8 md:mt-0">
           <div class="max-w-full">

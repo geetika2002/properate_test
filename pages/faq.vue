@@ -1,7 +1,7 @@
 <template>
     <div class="container mt-20 my-0 px-0 mx-auto bg-teal-50 ">
 
-        <section class="mb-16 bg-gradient-to-br from-teal-600 via-teal-400 to-teal-200 text-zinc-800 text-center">
+        <section class="mb-16 bg-gradient-to-br from-teal-50 via-teal-100 to-teal-200 text-zinc-800 text-center">
             <div class="flex justify-center">
                 <div class="max-w-[800px]">
                     <h2 class="mt-10 text-5xl md:text-6xl xl:text-5xl font-bold tracking-tight mb-6">
@@ -32,7 +32,7 @@
                     <!-- Menu content -->
                     <div class="flex flex-row flex-wrap md:flex-col items-center mt-9">
                         <button v-for="category in categories" :key="category.id" @click="selectCategory(category)"
-                            class="flex flex-col items-center justify-center w-20 md:w-40 h-6 md:h-12 p-4 mb-1 md:mb-10 space-y-2 bg-gray-100 rounded-md shadow-md hover:bg-gray-200 transition-colors duration-300 border-2 border-gray-400">
+                            class="flex flex-col items-center justify-center w-20 md:w-40 h-6 md:h-12 p-4 mb-1 md:mb-10 space-y-2 bg-white rounded-md shadow-md hover:bg-gray-200 transition-colors duration-300 border-2 border-gray-400">
                             <i class="fas fa-arrow-down"></i>
                             <span class="text-gray-800">{{ category.name }}</span>
                         </button>
@@ -67,7 +67,7 @@
         <section class="bg-teal-50 mb-0 text-gray-800 text-center">
             <div class="flex justify-center">
                 <div class="md:ml-10 w-full md:mr-10 mb-16 text-zinc-800 text-center">
-                    <div class="mt-10 md:w-240 bg-gradient-to-br from-teal-600 via-teal-400 to-teal-200 p-1 rounded-lg shadow-md">
+                    <div class="mt-10 md:w-240 bg-gradient-to-br from-teal-50 via-teal-100 to-teal-200 text-zinc-800 p-1 rounded-lg shadow-md">
                         <h2 class="mt-10 w-full text-5xl md:text-6xl xl:text-5xl font-bold tracking-tight mb-6">
                             Still have questions? <br />
                         </h2>
@@ -174,9 +174,9 @@ export default {
 
 .right .tab {
     position: relative;
-    background: linear-gradient(135deg, #5BE6E0, #4CC0BB, #358280);
+    background: linear-gradient(135deg, #5BE6E0, #4CC0BB, #5ce0db);
     padding: 0 20px 20px;
-    box-shadow: 0 15px 25px linear-gradient(135deg, #358280, #5E988D, #87AE9B);
+    box-shadow: 0 15px 25px linear-gradient(135deg, #57d4d0, #8bdecf, #87AE9B);
     border-radius: 5px;
     overflow: hidden;
 }
@@ -223,7 +223,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #358280;
+    color: #5ee3df;
     font-size: 1.25em;
     border-radius: 5px;
     margin-right: 10px;
@@ -246,8 +246,12 @@ export default {
     color : #358280;
 }
 
-.right .tab:nth-child(2) input:checked + label h2 {
-    background: linear-gradient(135deg, #358280, #5E988D, #87AE9B);
+.right .tab:nth-child(1) input:checked + label h2 {
+    background: linear-gradient(135deg, #59d5d1, #9bf8e7, #bbf0d6);
+}
+
+.right .tab:nth-child(2) input:checked + label h2 {     
+    background: linear-gradient(135deg, #59d5d1, #9bf8e7, #bbf0d6);
 }
 
 .right .tab:nth-child(3) label h2 {
@@ -255,21 +259,21 @@ export default {
 }
 
 .right .tab:nth-child(3) input:checked + label h2 {
-    background: linear-gradient(135deg, #C2FAE0);
+    background: linear-gradient(135deg, #59d5d1, #9bf8e7, #bbf0d6);
 }
 
 .right .tab:nth-child(4) label h2 {
     color : #ff96f9;
 }
 .right .tab:nth-child(4) input:checked + label h2 {
-    background: linear-gradient(135deg, #358280, #5E988D, #87AE9B);
+    background: linear-gradient(135deg, #59d5d1, #9bf8e7, #bbf0d6);
 }
 
 .right .tab:nth-child(5) label h2 {
     color : #fd6e6a;
 }
 .right .tab:nth-child(5) input:checked + label h2 {
-    background: linear-gradient(135deg, #358280, #5E988D, #87AE9B);
+    background: linear-gradient(135deg, #59d5d1, #9bf8e7, #bbf0d6);
 }
 
 .right label h3 {

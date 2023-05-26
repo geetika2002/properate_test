@@ -1,6 +1,6 @@
 ---
 title: Nuxt Content Documentation
-img: random1.jpg
+img: /destination-3.jpg
 alt: random pic
 date: 2023-05-26T22:25:24.197Z
 description: 'Empower your NuxtJS application with @nuxt/content module: write in a content/ directory and fetch your Markdown, JSON, YAML and CSV files through a MongoDB like API, acting as a Git-based Headless CMS.'

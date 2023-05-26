@@ -1,6 +1,6 @@
 ---
 title: Unlock the Potential of Nuxt.js Content Module
-img: random4.jpg
+img: /destination-2.jpg
 alt: random pic
 date: 2020-09-20T22:25:24.197Z
 description: "Unleash the full potential of your Nuxt.js application with the @nuxtjs/content module. Empower your project with a Git-based Headless CMS by organizing Markdown, JSON, YAML, and CSV files in a content/ directory and accessing them through a powerful API."

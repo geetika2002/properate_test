@@ -364,7 +364,7 @@
   
       <!-- Section: join our team-->
   
-      <section class="md:ml-20 md:mr-20 text-teal-1000 shadow-lg bg-gradient-to-br from-teal-600 via-teal-400 to-teal-200">
+      <section class="md:ml-20 md:mr-20 text-teal-1000 shadow-lg bg-gradient-to-br from-teal-50 via-teal-100 to-teal-200 text-zinc-800">
         <div class="px-1 py-6 md:px-12">
           <div class="grid lg:grid-cols-2 lg:gap-x-12 items-center">
             <div class="mb-12 lg:mb-0">

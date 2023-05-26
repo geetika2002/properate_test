@@ -1,6 +1,6 @@
 ---
 title: The Beginning of the Start of Nuxt
-img: random2.png
+img: /destination-1.jpg
 alt: random pic
 date: 2020-09-20T22:25:24.197Z
 description: "Empower your NuxtJS application with @nuxt/content module: write
